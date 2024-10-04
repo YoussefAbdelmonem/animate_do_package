@@ -170,7 +170,7 @@ class FadeInDownState extends State<FadeInDown>
     animation = Tween<double>(begin: widget.from * -1, end: 0)
         .animate(CurvedAnimation(parent: controller, curve: widget.curve));
 
-    opacity = Tween<double>(begin: 0, end: 1).animate(
+    opacity = Tween<double>(begin: 1, end: 1).animate(
         CurvedAnimation(parent: controller, curve: const Interval(0, 0.65)));
 
     /// Provided by the mixing [AnimateDoState] class
@@ -330,7 +330,7 @@ class FadeInUpState extends State<FadeInUp>
 
     animation = Tween<double>(begin: widget.from, end: 0)
         .animate(CurvedAnimation(parent: controller, curve: widget.curve));
-    opacity = Tween<double>(begin: 0, end: 1).animate(
+    opacity = Tween<double>(begin: 1, end: 1).animate(
         CurvedAnimation(parent: controller, curve: const Interval(0, 0.65)));
 
     /// Provided by the mixing [AnimateDoState] class
